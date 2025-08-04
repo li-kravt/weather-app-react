@@ -18,24 +18,26 @@ const CITIES = [
 function App () {
 
   return (
-    <div>
+    <>
       <h1>Weather Forecast</h1>
       <Select />
-    </div>
+    </>
   );
 }
 
 export default App
 
-function Select (props) {
-  const munich = props.CITIES[0].city
+function Select () {
+
+  const optionsCities = CITIES.map(({city}, i) => 
+    <option key={i}>
+      {city}
+    </option>
+  );
 
   return (
     <select>
-        <option>
-          {munich}
-        </option>
+      {optionsCities}
     </select>
   )
 }
-
