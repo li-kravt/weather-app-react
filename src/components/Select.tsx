@@ -12,7 +12,7 @@ function Select() {
     <>
       <label>Choose city</label>
       <select className="form-select" aria-label="Default select example">
-        {optionsCities}
+        {CITIES.length === 0 ? <option>No cities found</option> : optionsCities}
       </select>
     </>
   );
