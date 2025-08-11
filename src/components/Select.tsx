@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import CITIES from "../consts/CITIES";
 
 function Select() {
   const optionsCities = CITIES.map((city) => (
-    <option
-      key={city.id}
-      value={city.id}
-      onClick={() => console.log("clicked")}
-    >
+    <option key={city.id} value={city.id}>
       {city.city}
     </option>
   ));
