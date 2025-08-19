@@ -9,7 +9,7 @@ function App() {
     <>
       <h1>Weather Forecast</h1>
       <Select />
-      <DisplayData city="Tel Aviv" />
+      {/* <DisplayData city="Tel Aviv" /> */}
       <CounterButton />
     </>
   );
