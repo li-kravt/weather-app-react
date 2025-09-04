@@ -1,0 +1,11 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather-display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

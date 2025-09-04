@@ -7,10 +7,12 @@ import CounterButton from "./components/CounterButton";
 function App() {
   return (
     <>
-      <h1>Weather Forecast</h1>
-      <Select />
-      {/* <DisplayData city="Tel Aviv" /> */}
-      <CounterButton />
+      <div className="app-container">
+        <h1>Weather Forecast</h1>
+        <Select />
+        {/* <DisplayData city="Tel Aviv" /> */}
+        <CounterButton />
+      </div>
     </>
   );
 }

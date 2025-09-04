@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 
-function CounterButton () {
+export default function CounterButton () {
   const [count, setCount] = useState(1)
-  
-  return <button type="button" class="btn btn-light" onClick={()=> setCount(count * 2)}>{count}</button>
-}
 
-export default CounterButton
+  function handleClick() {
+    setCount(count * 2)
+  }
+  
+  return <button type="button" class="btn btn-light" onClick={handleClick}>{count}</button>
+}

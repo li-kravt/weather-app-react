@@ -11,6 +11,12 @@ const CITIES = [
     longitude: 34.7806,
     id: 2,
   },
+  {
+    city: "Rostov-on-Don",
+    latitude: 32.0809,
+    longitude: 34.7806,
+    id: 3,
+  },
 ];
 
 export default CITIES
