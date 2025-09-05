@@ -3,11 +3,13 @@ import "./App.css";
 import Select from "./components/Select";
 import DisplayData from "./components/DisplayData";
 import CounterButton from "./components/CounterButton";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <div className="app-container">
+      <div className="flex flex-col gap-4 bg-blue-50 h-full">
+        <Header />
         <h1>Weather Forecast</h1>
         <Select />
         {/* <DisplayData city="Tel Aviv" /> */}

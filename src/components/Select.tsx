@@ -9,9 +9,11 @@ export default function Select() {
   ));
 
   const [selectedCity, setSelectedCity] = useState(CITIES[0].city);
+
   function handleChange(e) {
     setSelectedCity(e.target.value);
   }
+
   return (
     <div className="weather-display-container">
       <label>Choose city</label>
