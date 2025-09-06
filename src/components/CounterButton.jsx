@@ -7,5 +7,5 @@ export default function CounterButton () {
     setCount(count * 2)
   }
   
-  return <button type="button" class="bg-red-500" onClick={handleClick}>{count}</button>
+  return <button type="button" class="bg-black text-white" onClick={handleClick}>{count}</button>
 }

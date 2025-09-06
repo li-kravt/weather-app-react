@@ -4,6 +4,7 @@ import Select from "./components/Select";
 import DisplayData from "./components/DisplayData";
 import CounterButton from "./components/CounterButton";
 import Header from "./components/Header";
+import DataFetch from "./components/DataWeather";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Select />
         {/* <DisplayData city="Tel Aviv" /> */}
         <CounterButton />
+        <DataFetch className="flex items-center" />
       </div>
     </>
   );
