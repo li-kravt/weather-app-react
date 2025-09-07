@@ -18,7 +18,7 @@ export default function DataFetch() {
   const curTimestamp = data.current.time * 1000
   const currentTimeObj = new Date(curTimestamp)
 
-  const formatted = currentTimeObj.getHours() + ":00" + " today"
+  const formatted = currentTimeObj.getHours() + ":" + currentTimeObj.getMinutes() + " today"
 
 
   console.log("Current time:", currentTime);

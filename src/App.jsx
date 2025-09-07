@@ -5,6 +5,7 @@ import DisplayData from "./components/DisplayData";
 import CounterButton from "./components/CounterButton";
 import Header from "./components/Header";
 import DataFetch from "./components/DataWeather";
+import InputSearchCity from "./components/InputSearchCity";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <CounterButton />
         <DataFetch className="flex items-center" />
       </div>
+      <InputSearchCity />
     </>
   );
 }
