@@ -1,43 +1,26 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import Select from "./components/Select";
+import DisplayData from "./components/DisplayData";
+import CounterButton from "./components/CounterButton";
+import Header from "./components/Header";
+import DataFetch from "./components/DataWeather";
+import InputSearchCity from "./components/InputSearchCity";
 
-const CITIES = [
-  {
-    city: "Munich",
-    lstitude: 48.1374,
-    longitude: 11.5755,
-  },
-  {
-    city: "Tel-Aviv",
-    latitude: 32.0809,
-    longitude: 34.7806,
-  }
-]
-
-
-function App () {
-
+function App() {
   return (
     <>
-      <h1>Weather Forecast</h1>
-      <Select />
+      <div className="flex flex-col gap-4 bg-blue-50 h-full">
+        <Header />
+        <h1>Weather Forecast</h1>
+        <Select />
+        {/* <DisplayData city="Tel Aviv" /> */}
+        <CounterButton />
+        <DataFetch className="flex items-center" />
+      </div>
+      <InputSearchCity />
     </>
   );
 }
 
-export default App
-
-function Select () {
-
-  const optionsCities = CITIES.map(({city}, i) => 
-    <option key={i}>
-      {city}
-    </option>
-  );
-
-  return (
-    <select>
-      {optionsCities}
-    </select>
-  )
-}
+export default App;
