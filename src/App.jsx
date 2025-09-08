@@ -8,6 +8,7 @@ import DataFetch from "./components/DataWeather";
 import InputSearchCity from "./components/InputSearchCity";
 import CounterButtonPlusMinus from "./components/tasks/UseStateNumbers1";
 import Checkbox from "./components/tasks/UseStateCheckbox";
+import PracticeJS from "./components/tasks/ForOf";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -24,10 +25,11 @@ function App() {
       </div>
       <div className="flex flex-col border-4 border-blue-700">
         <p className="text-3xl text-blue-700 font-bold">Practice Area</p>
-      <InputSearchCity />
-      {/* <UseStateListButtonAddElement /> */}
-      <CounterButtonPlusMinus />
-      <Checkbox />
+        <InputSearchCity />
+        {/* <UseStateListButtonAddElement /> */}
+        <CounterButtonPlusMinus />
+        <Checkbox />
+        <PracticeJS />
       </div>
     </>
   );
