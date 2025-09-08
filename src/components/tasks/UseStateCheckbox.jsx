@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 
 export default function Checkbox() {
-  const [text, setText] = useState("off")
+  const [isDark, setIsDark] = useState(false)
   function handleClick(e) {
-    if (e.target.checked === true) {
-      setText("on")
-    }
-    else {
-      setText("off")
-    }
+    setIsDark(e.target.checked)
   }
 
   return (
@@ -16,7 +11,7 @@ export default function Checkbox() {
       <p className="font-bold">Checkbox Darkmode</p>
       <label>Dark mode</label>
       <input type="checkbox" onChange={handleClick}></input>
-      <p>Dark mode is {text}</p>
+      <p>Dark mode is {isDark ? "on" : "off"}</p>
     </div>
   )
 
