@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import DataFetch from "./components/DataWeather";
 import InputSearchCity from "./components/InputSearchCity";
 import CounterButtonPlusMinus from "./components/tasks/UseStateNumbers1";
+import Checkbox from "./components/tasks/UseStateCheckbox";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -26,6 +27,7 @@ function App() {
       <InputSearchCity />
       {/* <UseStateListButtonAddElement /> */}
       <CounterButtonPlusMinus />
+      <Checkbox />
       </div>
     </>
   );
