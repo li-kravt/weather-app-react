@@ -10,6 +10,7 @@ import CounterButtonPlusMinus from "./components/tasks/UseStateNumbers1";
 import Checkbox from "./components/tasks/UseStateCheckbox";
 import PracticeJS from "./components/tasks/ForOf";
 import ColoredText from "./components/tasks/ColoredText";
+import Map from "./components/tasks/Map";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -32,6 +33,7 @@ function App() {
         <Checkbox />
         <PracticeJS />
         <ColoredText color="blue" text="React is cool" />
+        <Map />
       </div>
     </>
   );
