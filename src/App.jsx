@@ -12,6 +12,7 @@ import PracticeJS from "./components/tasks/ForOf";
 import ColoredText from "./components/tasks/ColoredText";
 import Map from "./components/tasks/Map";
 import Filter from "./components/tasks/Filter";
+import Reduce from "./components/tasks/Reduce";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -36,6 +37,7 @@ function App() {
         <ColoredText color="blue" text="React is cool" />
         <Map />
         <Filter />
+        <Reduce />
       </div>
     </>
   );
