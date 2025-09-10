@@ -11,6 +11,7 @@ import Checkbox from "./components/tasks/UseStateCheckbox";
 import PracticeJS from "./components/tasks/ForOf";
 import ColoredText from "./components/tasks/ColoredText";
 import Map from "./components/tasks/Map";
+import Filter from "./components/tasks/Filter";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -34,6 +35,7 @@ function App() {
         <PracticeJS />
         <ColoredText color="blue" text="React is cool" />
         <Map />
+        <Filter />
       </div>
     </>
   );
