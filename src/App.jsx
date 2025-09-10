@@ -13,6 +13,7 @@ import ColoredText from "./components/tasks/ColoredText";
 import Map from "./components/tasks/Map";
 import Filter from "./components/tasks/Filter";
 import Reduce from "./components/tasks/Reduce";
+import Greeting from "./components/tasks/Props";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -38,6 +39,9 @@ function App() {
         <Map />
         <Filter />
         <Reduce />
+        <Greeting name="Anna" age="25" />
+        <Greeting name="Elina" age="23" />
+        <Greeting name="Biba" age="35" />
       </div>
     </>
   );
