@@ -16,6 +16,7 @@ import Reduce from "./components/tasks/Reduce";
 import Greeting from "./components/tasks/Props";
 import SomeAndEvery from "./components/tasks/SomeAndEvery";
 import Destructuring from "./components/tasks/Destructuring";
+import SpreadAndRest from "./components/tasks/SpreadAndRest";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -46,6 +47,7 @@ function App() {
         <Greeting name="Biba" age="35" /> */}
         <SomeAndEvery />
         <Destructuring />
+        <SpreadAndRest />
       </div>
     </>
   );
