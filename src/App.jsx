@@ -14,6 +14,8 @@ import Map from "./components/tasks/Map";
 import Filter from "./components/tasks/Filter";
 import Reduce from "./components/tasks/Reduce";
 import Greeting from "./components/tasks/Props";
+import SomeAndEvery from "./components/tasks/SomeAndEvery";
+import Destructuring from "./components/tasks/Destructuring";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -39,9 +41,11 @@ function App() {
         <Map />
         <Filter />
         <Reduce />
-        <Greeting name="Anna" age="25" />
+        {/* <Greeting name="Anna" age="25" />
         <Greeting name="Elina" age="23" />
-        <Greeting name="Biba" age="35" />
+        <Greeting name="Biba" age="35" /> */}
+        <SomeAndEvery />
+        <Destructuring />
       </div>
     </>
   );
