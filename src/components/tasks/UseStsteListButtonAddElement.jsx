@@ -1,16 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 export default function UseStateListButtonAddElement() {
   const [li, setLi] = useState(["add something"])
 
   return (
-  <>"
-  <input  type="text" className="border border-4" placeholder="add task"/>
-  <button onClick={setLi()}>Add</button>
-  <ul>
-    {[...li]}
-  </ul>
-  </>
+    <>"
+      <input type="text" className="border border-4" placeholder="add task" />
+      <button onClick={setLi()}>Add</button>
+      <ul>
+        {[...li]}
+      </ul>
+    </>
   )
 }
 

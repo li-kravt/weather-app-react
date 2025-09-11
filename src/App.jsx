@@ -42,9 +42,9 @@ function App() {
         <Map />
         <Filter />
         <Reduce />
-        {/* <Greeting name="Anna" age="25" />
-        <Greeting name="Elina" age="23" />
-        <Greeting name="Biba" age="35" /> */}
+        {/* <Greeting userName="Anna" age="25" />
+        <Greeting userName="Elina" age="23" /> */}
+        <Greeting userName="Biba" age="35" greetingText="hi" />
         <SomeAndEvery />
         <Destructuring />
         <SpreadAndRest />

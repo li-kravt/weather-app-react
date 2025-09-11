@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 
-export default function Greeting({ name, age, greetingText }) {
+export default function Greeting({ userName, age }) {
+  const [text, setText] = useState(`Hello, ${userName}, are you ${age}?`)
 
-  try {
-    const [userName, setUserName] = useState(name)
 
-    return (
-      <>
-        <p>{greetingText}, {userName}, are you {age}?</p>
-        <button onClick={setUserName(name)}>Yes!</button>
-      </>
-    )
-  } catch {
-    console.error("something goes wrong");
-
+  function handleClick() {
+    setText(`Nice too meet you, ${userName}!`)
   }
+
+  return (
+    <>
+      <p>{text}</p>
+      <button onClick={handleClick} >Yes</button>
+    </>
+  )
 }
 
 // Окей, усложняем и добавляем пропсы:
