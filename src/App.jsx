@@ -17,6 +17,7 @@ import Greeting from "./components/tasks/Props";
 import SomeAndEvery from "./components/tasks/SomeAndEvery";
 import Destructuring from "./components/tasks/Destructuring";
 import SpreadAndRest from "./components/tasks/SpreadAndRest";
+import CheckboxList from "./components/tasks/UseStateCheckboxList";
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -48,6 +49,7 @@ function App() {
         <SomeAndEvery />
         <Destructuring />
         <SpreadAndRest />
+        <CheckboxList />
       </div>
     </>
   );

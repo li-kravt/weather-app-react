@@ -14,7 +14,6 @@ export default function Checkbox() {
       <p>Dark mode is {isDark ? "on" : "off"}</p>
     </div>
   )
-
 }
 
 // Task: Toggle dark mode with a checkbox

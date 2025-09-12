@@ -3,7 +3,13 @@ import React, { useState } from "react";
 export default function Map() {
   const numbers = [1, 2, 3, 4, 5];
 
-  console.log(numbers.map((x) => x * 3))
+  return (
+    <div className="flex flex-row border-2 gap-4">
+      {numbers.map((num, id) =>
+        <p key={id}>{num * 3}</p>
+      )}
+    </div>
+  )
 
 }
 
