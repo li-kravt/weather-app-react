@@ -6,7 +6,7 @@ export default function Map() {
   return (
     <div className="flex flex-row border-2 gap-4">
       {numbers.map((num, id) =>
-        <p key={id}>{num * 3}</p>
+        <p key={id}>Number: {num * 3}</p>
       )}
     </div>
   )

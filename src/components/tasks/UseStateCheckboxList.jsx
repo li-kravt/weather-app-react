@@ -2,26 +2,24 @@ import React, { useState } from "react";
 
 
 export default function CheckboxList() {
-  const [checked, setChecked] = useState(false, 0)
+  const [tasks, setTasks] = useState([
+    { id: 1, text: "Learn React", done: false },
+    { id: 2, text: "Practice JS", done: false },
+    { id: 3, text: "Walk dog", done: false }
+  ]);
 
-  function handleClick(e) {
-    setChecked(e.target.checked, e.target.label)
+
+  function handleClick(taskId) {
+    setTasks(tasks.map((task) => task.id === taskId ? { ...task, done: !task.done } : task
+    ))
   }
 
   return (
     <div>
-      <div>
-        <input type="checkbox" checked={checked} id="1" onChange={handleClick}></input>
-        <label htmlFor="1" style={checked ? { textDecoration: "line-through" } : { textDecoration: "none" }}>Learn React</label>
-      </div>
-      <div>
-        <input type="checkbox" checked={checked} id="2" onChange={handleClick}></input>
-        <label htmlFor="2" style={checked ? { textDecoration: "line-through" } : { textDecoration: "none" }}>Practice JS</label>
-      </div>
-      <div>
-        <input type="checkbox" checked={checked} id="3" onChange={handleClick}></input>
-        <label htmlFor="3" style={checked ? { textDecoration: "line-through" } : { textDecoration: "none" }}>Walk dog</label>
-      </div>
+      {tasks.map((task) => <div>
+        <input type="checkbox" key={task.id} checked={task.done} onChange={() => handleClick(task.id)}></input>
+        <label htmlFor={task.id} style={task.done ? { textDecoration: "line-through" } : { textDecoration: "none" }}>{task.text}</label>
+      </div>)}
     </div>
   )
 }
