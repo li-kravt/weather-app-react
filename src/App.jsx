@@ -19,6 +19,8 @@ import Destructuring from "./components/tasks/Destructuring";
 import SpreadAndRest from "./components/tasks/SpreadAndRest";
 import CheckboxList from "./components/tasks/UseStateCheckboxList";
 import UseStateText from "./components/tasks/UseStateText";
+import UseStateBoolean from "./components/tasks/UseStateBoolan";
+
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 
@@ -52,6 +54,7 @@ function App() {
         <SpreadAndRest />
         <CheckboxList />
         <UseStateText />
+        <UseStateBoolean />
       </div>
     </>
   );
