@@ -1,20 +1,27 @@
 import React, { useState } from "react";
 
 export default function UseStateListButtonAddElement() {
-  const [li, setLi] = useState(["add something"])
+  const [list, setList] = useState([])
+  const [text, setText] = useState("")
+
+  function handleClick() {
+    setList([...list, text])
+    setText("")
+  }
+
 
   return (
-    <>"
-      <input type="text" className="border border-4" placeholder="add task" />
-      <button onClick={setLi()}>Add</button>
+    <div className="flex flex-col">
+      <input type="text" value={text} onChange={((e) => setText(e.target.value))} className="border-4" placeholder="add task" />
+      <button onClick={handleClick}>Add</button>
       <ul>
-        {[...li]}
+        {list.map((li, index) => <li key={index}>{li}</li>)}
       </ul>
-    </>
+    </div>
   )
 }
 
-// Here’s the task:
+{/* // Here’s the task:
 
 // An input field for text.
 
@@ -40,4 +47,4 @@ export default function UseStateListButtonAddElement() {
 
 // On button click, update the array with the new text.
 
-// Want me to show you a code example, or do you want to try first?
+// Want me to show you a code example, or do you want to try first? */}

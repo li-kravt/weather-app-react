@@ -20,6 +20,7 @@ import SpreadAndRest from "./components/tasks/SpreadAndRest";
 import CheckboxList from "./components/tasks/UseStateCheckboxList";
 import UseStateText from "./components/tasks/UseStateText";
 import UseStateBoolean from "./components/tasks/UseStateBoolan";
+import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
 // import UseStateListButtonAddElement from "./components/tasks/UseStsteListButtonAddElement";
 
@@ -55,6 +56,7 @@ function App() {
         <CheckboxList />
         <UseStateText />
         <UseStateBoolean />
+        <UseStateListButtonAddElement />
       </div>
     </>
   );
